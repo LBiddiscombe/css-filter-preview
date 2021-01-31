@@ -1,18 +1,9 @@
-Svelte / Typescript / Tailwind / Snowpack Template
-==================================================
+CSS Filter Preview
+==================
 
-A template for using Svelte, Typescript, Tailwind and Snowpack together.
+A quick exploration of a template for using Svelte, Typescript, Tailwind and Snowpack together.
 
-Out-of-the-box 100s across the board on lighthouse.
-
-Installation
-------------
-
-```
-npx degit "srmullen/stts#main" my_app
-cd my_app
-npm install
-```
+Original starter pack can be found here - https://github.com/srmullen/stts
 
 Scripts
 -------
