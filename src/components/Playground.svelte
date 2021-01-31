@@ -19,7 +19,7 @@
   $: style = filters.map((f) => `${f.filter}(${f.value}${f.unit})`).join(' ')
 </script>
 
-<div class="grid w-full grid-cols-1 gap-4 py-8 mb-6 bg-white shadow-lg sm:grid-cols-2 justify-items-center">
+<div class="grid w-full grid-cols-1 gap-4 p-8 mb-6 bg-white shadow-lg sm:grid-cols-2 justify-items-center">
   <img class="object-cover" style={`filter: ${style}`} src="http://placekitten.com/300/300" alt="kitten" />
   <div class="flex flex-col justify-evenly">
     {#each filters as filter, i (filter.label)}
