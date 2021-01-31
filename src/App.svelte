@@ -1,7 +1,7 @@
 <script lang="ts">
   import Image from './components/Image.svelte'
   import Playground from './components/Playground.svelte'
-  import Tailwind from './Tailwind.svelte'
+  import Tailwind from './components/Tailwind.svelte'
 
   const config = {
     none: {
