@@ -54,13 +54,13 @@
 
 <div class="h-full bg-gray-100">
   <div class="max-w-6xl px-4 py-8 mx-auto text-gray-800">
-    <h1 class="mb-8 text-xl font-bold text-center text-gray-700 sm:text-4xl">CSS Filter Previews</h1>
+    <h1 class="mb-8 text-xl font-bold text-center text-gray-700 sm:text-4xl">CSS Filter Preview</h1>
     <div class="grid grid-cols-1 gap-4 justify-items-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       <div class="col-span-full">
         <Playground defaultFilters={filters.filter((f) => f.label !== 'Original')} />
       </div>
-      {#each filters as filter, i (filter.label)}
-        <Image {filter} />
+      {#each filters as defaultFilter, i (defaultFilter.label)}
+        <Image {defaultFilter} />
       {/each}
     </div>
   </div>

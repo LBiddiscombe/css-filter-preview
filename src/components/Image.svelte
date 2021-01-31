@@ -8,7 +8,9 @@
     unit: string
   }
 
-  export let filter: Filter
+  export let defaultFilter: Filter
+
+  let filter: Filter = JSON.parse(JSON.stringify(defaultFilter))
 
   $: style = `filter: ${filter.filter}(${filter.value}${filter.unit})`
   $: title = filter.filter === 'none' ? filter.label : `${filter.label} ${filter.value}${filter.unit}`
